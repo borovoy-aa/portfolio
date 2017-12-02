@@ -1,0 +1,95 @@
+extends ../layouts/page.pug
+
+block title
+  title Artem Borovoy
+
+block content
+  .page-content
+    div#fullpage.sub-content
+      
+      section.section-content(data-anchor="firstPage")
+        .subsection
+        .container-fluid.section-content__container
+          .row.justify-content-center
+            .col-lg-12.col-xl-12.col-8
+              .wrapper
+                .photo
+                  img.img-fluid(data-src='../images/2289.jpg', alt='')
+                .title
+                  h2 web-dev
+                hr.subline
+                span.my-skills Html - Pug - CSS - Sass - Git - БЭМ - Photoshop - Js(jq)
+                
+                a(href='#secondPage').slide-down.floating
+                  i.fa.fa-arrow-down(aria-hidden='true')
+
+      section.section-about-me.second(data-anchor="secondPage")
+        .subsection
+        .container.opacity-zero
+          .row.justify-content-center
+            .col-xl-8.col-lg-9.col-md-12
+              h2 Borovoy Artem
+              h3 html-coder, freelancer
+              p.is-animated
+                span About me: 
+                | I'm a student. I immersed myself in learning web development over a year ago. During this time I learned, and was able use in their projects, the following technologies for  web development: HTML5, Jade(pug), BEM, CSS3, Sass, Bootstrap(3,4), basic knowledge of Javascript(Jquery), g6 and Wordpress.
+              p.is-animated I develop by W3C standards (valid code), I follow the cross-browser compatibility of Chrome, FireFox 3+, IE 9+, Opera 10+. I have experience in developing projects with responsive design (responsive web design)
+              p.is-animated Developing a tableless (all on a div), full compliance with the layout.
+              p.is-animated
+                span Education: 
+                | At the moment I am studying at East Ukrainian National University, at the faculty of computer science and engineering.
+              p.is-animated
+                span Languages: 
+                | Ukrainian, Russian, English - intermediate, level working with the technical documentation.
+              p.is-animated
+                span Personal qualities: 
+                | Responsibility, punctuality, sociability, accuracy, stress resistance, learning ability, attentiveness, good sense of humor.
+      
+      section.section-my-works.third(data-anchor="thirdPage")
+        .subsection
+        .container.opacity-zero
+          .row.justify-content-center
+            .col
+              .section-my-works__head
+                h3.is-animated__single My Works
+                hr.subline.subline--large(data-emergence="hidden")
+          .row.justify-content-center
+            .col-md-3.col-sm-6.col-6.is-animated
+              .inside
+                a.work-link(href="https://casablanca-landing.github.io/" target="_blank")
+                  img.img-fluid(data-src="../images/works/1-work.jpg", alt="")
+                  span.work-link__title
+                    span.work-link__subtitle Casablanca
+
+            .col-md-3.col-sm-6.col-6.is-animated
+              .inside
+                a.work-link(href="#")
+                  img.img-fluid(data-src="../images/works/2-work.jpg", alt="")
+                  span.work-link__title
+                    span.work-link__subtitle MeetUp
+
+            .col-md-3.col-sm-6.col-6.is-animated
+              .inside
+                a.work-link(href="https://casablanca-landing.github.io/" target="_blank")
+                  img.img-fluid(data-src="../images/works/1-work.jpg", alt="")
+                  span.work-link__title
+                    span.work-link__subtitle Casablanca
+          
+            .col-md-3.col-sm-6.col-6.is-animated
+              .inside
+                a.work-link(href="#")
+                  img.img-fluid(data-src="../images/works/2-work.jpg", alt="")
+                  span.work-link__title
+                    span.work-link__subtitle MeetUp
+
+      
+            
+block scripts
+
+//- .detail
+            //-   | Связаться со мной можно через 
+            //-   a(href='https://t.me/a_borovoy', target='_blank') Telegram, 
+            //-   a(href='https://vk.com/boo_oo_o', target='_blank') Вконтакте 
+            //-   | или по  
+            //-   a(href='mailto:work.borovoy@gmail.com', target='_blank') e-mail
+            //-   | .
